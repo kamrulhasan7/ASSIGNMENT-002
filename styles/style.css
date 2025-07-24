@@ -2,15 +2,27 @@
 
 @import "tailwindcss";
 
-@layer theme{
-    .font-noto{
+@layer theme {
+    .font-noto {
         font-family: "Noto Serif", serif;
     }
-    .font-inter{
+
+    .font-inter {
         font-family: "Inter", sans-serif;
     }
 
-    :root{
-        --primary:#E95A08;
+    .spin-spin{
+        animation: wiggle 5s linear infinite ;
     }
+
+    @keyframes wiggle {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
 }
